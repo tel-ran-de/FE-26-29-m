@@ -1,0 +1,101 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+nav {
+	background-color: #eee;
+	padding: 25px;
+	/* position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0; */
+}
+
+nav > ul {
+	list-style: none;
+	display: flex;
+	/* flex-direction: column; */
+}
+
+p {
+	line-height: 2;
+	margin-bottom: 30px;
+	padding: 10px;
+	margin-left: 160px;
+}
+
+.first {
+	margin-top: 80px;
+}
+
+.modal-wrapper {
+	background-color: rgba(0, 0, 0, 0.7);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.modal {
+	width: 75%;
+	padding: 30px;
+	background-color: #fff;
+	border-radius: 10px;
+	position: relative;
+}
+
+.modal-close {
+	border: 1px solid black;
+	border-radius: 50%;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 20px;
+	height: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	line-height: 0.8;
+	cursor: pointer;
+}
+
+.wrapper {
+	width: 80%;
+	margin: 0 auto;
+}
+
+ul.stylized {
+	list-style: none;
+}
+
+.stylized li {
+	color: green;
+	margin-bottom: 5px;
+	/* display: flex;
+	gap: 10px;
+	align-items: center; */
+	position: relative;
+	font-size: 36px;
+}
+
+.stylized li:before {
+	content: '';
+	/* display: block; */
+	width: 30px;
+	height: 30px;
+	/* background-color: white; */
+	background-image: url(https://images.squarespace-cdn.com/content/v1/5c3e9b6f25bf02ae29a086ed/1548907309824-0W1HRSGQT4YFD2FYX2FK/orange-bullet.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+	position: absolute;
+	top: 5px;
+	left: -45px;
+}
