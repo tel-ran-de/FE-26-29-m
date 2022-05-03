@@ -1,0 +1,41 @@
+@mixin box-shadows($color, $shadow-color) {
+	@if $color == null {
+		$color: black;
+	}
+	@if $shadow-color == null {
+		$shadow-color: rgba(0, 0, 0, 0.4);
+	}
+	border: 1px solid $color;
+	padding: 10px;
+	box-shadow: 5px 5px 5px $shadow-color;
+}
+
+$media_queries: (
+	'tablet': (
+		min-width: 768px,
+	),
+	'desctop': (
+		min-width: 992px,
+	),
+	'largeDesctop': (
+		min-width: 1024px,
+	),
+	'tv': (
+		min-width: 1280px,
+	),
+);
+
+@mixin for_breakpoint($breakpoints) {
+	$conditions: ();
+	@each $breakpoint in $breakpoints {
+		$conditions: append(
+			$conditions,
+			#{inspect(map-get($media_queries, $breakpoint))},
+			comma
+		);
+	}
+
+	@media #{$conditions} {
+		@content;
+	}
+}

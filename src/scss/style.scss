@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&display=swap');
+@import 'variables';
+@import 'mixins';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	// background-color: $red;
+}
+
+h1 {
+	color: $red;
+	padding: $width;
+	@include for_breakpoint(tablet) {
+		font-size: 2.25em;
+	}
+	@include for_breakpoint(desctop) {
+		font-size: 2.5em;
+	}
+	@include for_breakpoint(largeDesctop tv) {
+		font-size: 3em;
+	}
+}
+
+.hero {
+	font-family: $baseFont;
+	font-size: $therdSize;
+	width: 90%;
+	margin: 20px auto;
+	@include box-shadows(null, null);
+}
+
+.hero-1 {
+	font-family: $baseFont;
+	font-size: $therdSize;
+	color: $red;
+	width: 90%;
+	margin: 20px auto;
+	@include box-shadows($red, rgba(240, 11, 11, 0.4));
+}
+
+@import 'team';
+
+// .btn {
+// 	margin: 10px;
+// 	color: black;
+// 	width: 200px;
+// 	height: 100px;
+// }
+
+%btn {
+	margin: 10px;
+	color: black;
+	width: 200px;
+	height: 100px;
+}
+
+.btn-blue {
+	// @extend .btn;
+	@extend %btn;
+	background-color: lightblue;
+}
+
+.btn-red {
+	@extend %btn;
+	background-color: $red;
+}
+
+@for $i from 1 through 12 {
+	.item-#{$i} {
+		width: 100% / 12 * $i;
+		margin: 0 5px;
+	}
+}
+
+.d-flex {
+	display: flex;
+}

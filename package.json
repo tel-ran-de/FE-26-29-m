@@ -1,0 +1,24 @@
+{
+	"name": "fe-26-29-m",
+	"version": "1.0.0",
+	"description": "Для просмотра кода выбери в выпадающем меню урок",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"scss": "node-sass --watch src/scss/style.scss -o css"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/tel-ran-de/FE-26-29-m.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/tel-ran-de/FE-26-29-m/issues"
+	},
+	"homepage": "https://github.com/tel-ran-de/FE-26-29-m#readme",
+	"dependencies": {
+		"node-sass": "^7.0.1"
+	}
+}

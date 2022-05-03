@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+h1 {
+  color: #fe0000;
+  padding: 20px 30px; }
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 2.25em; } }
+  @media (min-width: 992px) {
+    h1 {
+      font-size: 2.5em; } }
+  @media (min-width: 1024px), (min-width: 1280px) {
+    h1 {
+      font-size: 3em; } }
+
+.hero {
+  font-family: "Oleo Script Swash Caps", cursive;
+  font-size: 26.66667px;
+  width: 90%;
+  margin: 20px auto;
+  border: 1px solid black;
+  padding: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4); }
+
+.hero-1 {
+  font-family: "Oleo Script Swash Caps", cursive;
+  font-size: 26.66667px;
+  color: #fe0000;
+  width: 90%;
+  margin: 20px auto;
+  border: 1px solid #fe0000;
+  padding: 10px;
+  box-shadow: 5px 5px 5px rgba(240, 11, 11, 0.4); }
+
+.team {
+  background-color: lightblue; }
+  .team-wrapper {
+    padding: 0 20px; }
+    @media (min-width: 1024px) {
+      .team-wrapper {
+        width: 80%;
+        margin: 0 auto; } }
+  .team-header {
+    padding: 10px 0;
+    border: 1px solid darkblue; }
+    .team-header h2 {
+      font-style: italic; }
+
+.btn-blue, .btn-red {
+  margin: 10px;
+  color: black;
+  width: 200px;
+  height: 100px; }
+
+.btn-blue {
+  background-color: lightblue; }
+
+.btn-red {
+  background-color: #fe0000; }
+
+.item-1 {
+  width: 8.33333%;
+  margin: 0 5px; }
+
+.item-2 {
+  width: 16.66667%;
+  margin: 0 5px; }
+
+.item-3 {
+  width: 25%;
+  margin: 0 5px; }
+
+.item-4 {
+  width: 33.33333%;
+  margin: 0 5px; }
+
+.item-5 {
+  width: 41.66667%;
+  margin: 0 5px; }
+
+.item-6 {
+  width: 50%;
+  margin: 0 5px; }
+
+.item-7 {
+  width: 58.33333%;
+  margin: 0 5px; }
+
+.item-8 {
+  width: 66.66667%;
+  margin: 0 5px; }
+
+.item-9 {
+  width: 75%;
+  margin: 0 5px; }
+
+.item-10 {
+  width: 83.33333%;
+  margin: 0 5px; }
+
+.item-11 {
+  width: 91.66667%;
+  margin: 0 5px; }
+
+.item-12 {
+  width: 100%;
+  margin: 0 5px; }
+
+.d-flex {
+  display: flex; }
