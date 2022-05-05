@@ -4,10 +4,42 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>BEM - Block Element Modify</title>
 		<link rel="stylesheet" href="./css/styles.css" />
 	</head>
-	<body>
+	<body class="body">
+		<div class="products body__products">
+			<div class="wrapper">
+				<h2 class="header">Products</h2>
+				<div class="products__list">
+					<div
+						class="products__item product products__item--visible product--green"
+					>
+						<div class="product__title">Butter</div>
+						<div class="product__description">
+							Lorem ipsum dolor sit amet.
+							<a href="product__more-link">Read more</a>
+						</div>
+						<div class="product__price">2.48</div>
+					</div>
+					<div class="products__item products__item--favorite"></div>
+					<div class="products__item"></div>
+				</div>
+			</div>
+		</div>
+		<div class="team">
+			<h2 class="header header--green">Teams</h2>
+		</div>
+		<div class="contacts">
+			<h2 class="header">Contacts</h2>
+		</div>
+
+		<button class="modal__button-open modal__button-open_visible"></button>
+
+		<div class="modal">
+			<div class="modal__window"></div>
+		</div>
+
 		<!-- <script src="./js/app.js"></script> -->
 	</body>
 </html>
